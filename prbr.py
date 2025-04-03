@@ -296,7 +296,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played,
     )
     fig_text(
         0.518, 0.892,
-        f"{ball_retention_pct:.1f}% of the Balls that {player_name.split()[0] if player_name else 'Player'} Recovers end up in a successful PASS",
+        f"{ball_retention_pct:.1f}% of the Balls that {player_name.split()[0] if player_name else 'Player'} Recovers end up in a successful ACTION",
         font='Arial Rounded MT Bold', size=18,
         ha="center", color="#FFFFFF", fontweight='bold'
     )
