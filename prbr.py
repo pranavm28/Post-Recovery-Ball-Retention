@@ -307,7 +307,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played,
     )
     fig_text(
         0.265, 0.105, 
-        f"<Successful Passes = {succ_PR} ({succ_PR_per90:.2f})>\n<Progressive Passes = {prog_PR} ({prog_PR_per90:.2f}) ({prog_passes_pct:.1f}%)>\n<Unsuccessful Passes = {unsucc_PR} ({unsucc_PR_per90:.2f})>",
+        f"<Successful Passes = {succ_PR} ({succ_PR_per90:.2f})>\n<Progressive Passes = {prog_PR} ({prog_PR_per90:.2f})>\n<Unsuccessful Passes = {unsucc_PR} ({unsucc_PR_per90:.2f})>",
         font='Arial Rounded MT Bold', size=16,
         ha="center", color="#FFFFFF", fontweight='bold', 
         highlight_textprops=[{"color": '#24a8ff'}, {"color": '#03fc24'}, {"color": "#FF5959"}]
