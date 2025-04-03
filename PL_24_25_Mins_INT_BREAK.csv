@@ -1,0 +1,553 @@
+,player,team,age,position,Mins,Passing Accuracy,90s
+0,Mohamed Salah,Liverpool,32,"AM(CLR),FW",2575,73.6,28.61111111111111
+1,Bukayo Saka,Arsenal,23,"D(L),M(CLR)",1276,84.3,14.177777777777777
+2,Alexander Isak,Newcastle,25,"AM(L),FW",2063,75.4,22.92222222222222
+3,Cole Palmer,Chelsea,22,"AM(CR),FW",2448,82.3,27.2
+4,Erling Haaland,Man City,24,FW,2484,66.4,27.6
+5,Bryan Mbeumo,Brentford,25,"AM(LR),FW",2607,75.2,28.966666666666665
+6,Matheus Cunha,Wolves,25,"AM(CL),FW",2148,77.7,23.866666666666667
+7,Jérémy Doku,Man City,22,M(LR),1163,84.6,12.922222222222222
+8,Bruno Fernandes Man Utd,,30,"M(CLR),FW",2380,80.4,26.444444444444443
+9,Antoine Semenyo,Bournemouth,25,"AM(LR),FW",2471,77.3,27.455555555555556
+10,Mark Travers,Bournemouth,25,GK,450,62.8,5.0
+11,Luis Díaz,Liverpool,28,"AM(LR),FW",1861,86.0,20.677777777777777
+12,Amad Diallo Man Utd,,22,M(CR),1595,85.2,17.72222222222222
+13,Son Heung-Min,Tottenham,32,"M(CLR),FW",1865,84.0,20.72222222222222
+14,Trent Alexander-Arnold,Liverpool,26,"D(R),DMC,M(R)",2158,78.2,23.977777777777778
+15,Dwight McNeil,Everton,25,M(CLR),1143,81.4,12.7
+16,Antonee Robinson,Fulham,27,"D(L),M(L)",2538,80.5,28.2
+17,Daniel Muñoz,Crystal Palace,28,"D(CR),DMC,M(R)",2347,74.4,26.07777777777778
+18,Mikkel Damsgaard,Brentford,24,AM(CL),2229,77.9,24.766666666666666
+19,Brandon Austin,Tottenham,26,GK,90,66.7,1.0
+20,Eberechi Eze,Crystal Palace,26,AM(CLR),1935,82.0,21.5
+21,Jarrod Bowen,West Ham,28,"AM(CLR),FW",2191,79.1,24.344444444444445
+22,Kai Havertz,Arsenal,25,"M(CR),FW",1842,79.9,20.466666666666665
+23,Morgan Gibbs-White,Nottingham Forest,25,"AM(CLR),FW",2036,80.9,22.622222222222224
+24,Nicolas Jackson,Chelsea,23,FW,1751,75.7,19.455555555555556
+25,Mark Flekken,Brentford,31,GK,2466,73.0,27.4
+26,Omar Marmoush,Man City,26,"AM(CL),FW",480,82.7,5.333333333333333
+27,Virgil van Dijk,Liverpool,33,D(C),2610,91.9,29.0
+28,Iliman Ndiaye,Everton,25,"AM(CLR),FW",1883,83.8,20.92222222222222
+29,Anthony Gordon,Newcastle,24,"AM(CLR),FW",2124,79.6,23.6
+30,Youri Tielemans,Aston Villa,27,M(C),2497,85.9,27.744444444444444
+31,James Tarkowski,Everton,32,D(C),2602,82.0,28.91111111111111
+32,Declan Rice,Arsenal,26,"D(C),DMC",2161,90.2,24.011111111111113
+33,Chris Wood,Nottingham Forest,33,FW,2362,66.8,26.244444444444444
+34,Ryan Gravenberch,Liverpool,22,DMC,2478,89.3,27.533333333333335
+35,Alexis Mac Allister,Liverpool,26,"M(CL),FW",2120,87.6,23.555555555555557
+36,Elliot Anderson,Nottingham Forest,22,M(CL),1993,82.3,22.144444444444446
+37,Neto,Bournemouth,35,GK,180,61.1,2.0
+38,James Maddison,Tottenham,28,AM(CLR),1529,85.7,16.988888888888887
+39,Dominic Solanke,Tottenham,27,FW,1781,72.5,19.788888888888888
+40,Carlos Alcaraz,Everton,22,"M(CL),FW",315,81.7,3.5
+41,Maxence Lacroix,Crystal Palace,24,D(C),2246,82.0,24.955555555555556
+42,Murillo,Nottingham Forest,22,D(C),2480,78.9,27.555555555555557
+43,Aaron Wan-Bissaka,West Ham,27,"D(LR),M(R)",2435,81.8,27.055555555555557
+44,Justin Kluivert,Bournemouth,25,"AM(CLR),FW",1952,79.3,21.68888888888889
+45,Pedro Porro,Tottenham,25,"D(R),M(R)",2279,75.9,25.322222222222223
+46,Ayden Heaven Man Utd,,18,Defender,96,81.6,1.0666666666666667
+47,Alex Iwobi,Fulham,28,"D(R),M(CLR)",2373,79.4,26.366666666666667
+48,Yoane Wissa,Brentford,28,"AM(L),FW",2120,81.1,23.555555555555557
+49,Bruno Guimarães,Newcastle,27,DMC,2434,83.6,27.044444444444444
+50,Josko Gvardiol,Man City,23,D(CL),2470,91.0,27.444444444444443
+51,Moisés Caicedo,Chelsea,23,"D(R),DMC",2546,90.2,28.288888888888888
+52,Dean Huijsen,Bournemouth,19,D(C),1690,84.3,18.77777777777778
+53,Guglielmo Vicario,Tottenham,28,GK,1530,88.8,17.0
+54,Marcus Rashford,Aston Villa,27,"AM(CLR),FW",201,81.2,2.2333333333333334
+55,Dominik Szoboszlai,Liverpool,24,"AM(CLR),FW",1955,85.6,21.72222222222222
+56,Callum Hudson-Odoi,Nottingham Forest,24,M(CLR),1907,89.3,21.18888888888889
+57,Abdul Fatawu,Leicester,21,AM(LR),577,68.4,6.411111111111111
+58,Savinho,Man City,20,AM(CLR),1572,86.7,17.466666666666665
+59,Cristian Romero,Tottenham,26,D(C),1105,89.4,12.277777777777779
+60,Mateo Kovacic,Man City,30,M(CL),1685,93.1,18.72222222222222
+61,João Pedro,Brighton,23,"AM(CL),FW",1705,74.3,18.944444444444443
+62,Nikola Milenkovic,Nottingham Forest,27,D(CR),2520,82.2,28.0
+63,Nathan Collins,Brentford,23,D(CR),2610,86.9,29.0
+64,Ben Davies,Tottenham,31,"D(CL),M(L)",721,89.9,8.011111111111111
+65,Dejan Kulusevski,Tottenham,24,"AM(CR),FW",2155,81.1,23.944444444444443
+66,Christian Nørgaard,Brentford,31,"D(C),DMC",2021,83.0,22.455555555555556
+67,Lewis Hall,Newcastle,20,"D(L),M(L)",2193,85.4,24.366666666666667
+68,Ibrahima Konaté,Liverpool,25,D(C),1898,90.4,21.08888888888889
+69,Dango Ouattara,Bournemouth,23,"D(L),M(LR),FW",1518,67.1,16.866666666666667
+70,Kaoru Mitoma,Brighton,27,M(L),2326,80.2,25.844444444444445
+71,Gabriel Magalhães,Arsenal,27,D(C),2350,90.7,26.11111111111111
+72,Ryan Christie,Bournemouth,30,"M(CLR),FW",2073,82.4,23.033333333333335
+73,Thomas Partey,Arsenal,31,"D(R),M(CR)",2190,88.8,24.333333333333332
+74,Marcus Tavernier,Bournemouth,26,M(CLR),1508,79.7,16.755555555555556
+75,Cody Gakpo,Liverpool,25,"AM(CLR),FW",1412,84.2,15.688888888888888
+76,Martin Ødegaard,Arsenal,26,AM(CR),1733,87.6,19.255555555555556
+77,Enzo Fernández,Chelsea,24,M(C),2140,84.2,23.77777777777778
+78,Trevoh Chalobah,Crystal Palace,25,"D(CR),DMC",1063,79.8,11.811111111111112
+79,Jason Steele,Brighton,34,GK,180,89.5,2.0
+80,Sven Botman,Newcastle,25,D(C),226,88.3,2.511111111111111
+81,Djed Spence,Tottenham,24,"D(LR),M(R)",1064,87.9,11.822222222222223
+82,Marc Guéhi,Crystal Palace,24,D(C),2430,83.4,27.0
+83,Carlos Baleba,Brighton,21,DMC,1960,87.4,21.77777777777778
+84,Joelinton,Newcastle,28,"AM(CLR),FW",2013,84.6,22.366666666666667
+85,Lewis Cook,Bournemouth,28,"D(R),M(CL)",2392,81.8,26.57777777777778
+86,Jean-Philippe Mateta,Crystal Palace,27,FW,2138,68.0,23.755555555555556
+87,Jacob Murphy,Newcastle,30,"D(R),M(LR)",1691,75.9,18.788888888888888
+88,Noni Madueke,Chelsea,23,"AM(R),FW",1464,84.6,16.266666666666666
+89,Kevin De Bruyne,Man City,33,"M(CLR),FW",1104,83.8,12.266666666666667
+90,William Saliba,Arsenal,24,D(C),2366,93.8,26.288888888888888
+91,Tomás Soucek,West Ham,30,M(C),2088,74.5,23.2
+92,Yankuba Minteh,Brighton,20,AM(R),1267,66.4,14.077777777777778
+93,Kenny Tete,Fulham,29,"D(CR),M(R)",1266,83.0,14.066666666666666
+94,Neco Williams,Nottingham Forest,23,"D(LR),M(LR)",1782,80.6,19.8
+95,Lisandro Martínez Man Utd,,27,"D(CL),DMC",1754,90.0,19.488888888888887
+96,Pervis Estupiñán,Brighton,27,"D(L),M(L)",1692,88.3,18.8
+97,Phil Foden,Man City,24,"AM(CLR),FW",1632,89.0,18.133333333333333
+98,Rayan Aït-Nouri,Wolves,23,"D(L),M(L)",2395,87.1,26.61111111111111
+99,Ola Aina,Nottingham Forest,28,"D(CLR),M(LR)",2535,79.6,28.166666666666668
+100,Martin Dúbravka,Newcastle,36,GK,900,75.9,10.0
+101,Idrissa Gueye,Everton,35,M(C),2271,87.0,25.233333333333334
+102,Mohammed Kudus,West Ham,24,"M(CLR),FW",2006,89.9,22.288888888888888
+103,Julio Enciso,Ipswich,21,AM(CL),272,69.8,3.022222222222222
+104,Diogo Dalot Man Utd,,26,"D(LR),M(LR)",2487,83.3,27.633333333333333
+105,Morgan Rogers,Aston Villa,22,"AM(CLR),FW",2347,75.0,26.07777777777778
+106,Raúl Jiménez,Fulham,33,FW,1848,72.2,20.533333333333335
+107,Brennan Johnson,Tottenham,23,"AM(CLR),FW",1769,77.1,19.655555555555555
+108,Jake O'Brien,Everton,23,D(CR),849,77.1,9.433333333333334
+109,Ismaïla Sarr,Crystal Palace,27,"AM(CLR),FW",1937,70.2,21.522222222222222
+110,Joachim Andersen,Fulham,28,D(C),1763,83.9,19.58888888888889
+111,Mario Lemina,Wolves,31,"D(C),M(C)",1365,81.3,15.166666666666666
+112,David Raya,Arsenal,29,GK,2610,70.8,29.0
+113,Wilfred Ndidi,Leicester,28,"D(C),M(C)",1655,81.2,18.38888888888889
+114,Matz Sels,Nottingham Forest,33,GK,2610,47.5,29.0
+115,Jurriën Timber,Arsenal,23,D(CLR),2206,87.4,24.511111111111113
+116,Jordan Pickford,Everton,31,GK,2610,62.2,29.0
+117,Marshall Munetsi,Wolves,28,"D(C),M(C)",340,79.7,3.7777777777777777
+118,Ethan Pinnock,Brentford,31,D(C),1831,87.4,20.344444444444445
+119,Milos Kerkez,Bournemouth,21,"D(L),M(L)",2540,80.8,28.22222222222222
+120,Leandro Trossard,Arsenal,30,"M(CLR),FW",1910,79.8,21.22222222222222
+121,Gabriel Martinelli,Arsenal,23,"AM(LR),FW",1577,77.3,17.522222222222222
+122,Kevin Schade,Brentford,23,"AM(LR),FW",1577,62.0,17.522222222222222
+123,Emmanuel Agbadou,Wolves,27,"D(CR),DMC",601,82.3,6.677777777777778
+124,Tyrone Mings,Aston Villa,32,D(CL),781,87.7,8.677777777777777
+125,Anthony Elanga,Nottingham Forest,22,"AM(LR),FW",1854,77.6,20.6
+126,Jarrad Branthwaite,Everton,22,D(C),1806,82.4,20.066666666666666
+127,Danny Welbeck,Brighton,34,"AM(CLR),FW",1494,83.2,16.6
+128,Noussair Mazraoui Man Utd,,27,"D(CLR),M(R)",2227,85.4,24.744444444444444
+129,Marco Asensio,Aston Villa,29,"AM(CLR),FW",206,86.3,2.2888888888888888
+130,Casemiro Man Utd,,33,"D(C),DMC",1125,81.2,12.5
+131,Jan Paul van Hecke,Brighton,24,D(C),2331,88.9,25.9
+132,Tyrick Mitchell,Crystal Palace,25,"D(L),M(L)",2407,73.3,26.744444444444444
+133,Ollie Watkins,Aston Villa,29,"AM(LR),FW",2067,76.5,22.966666666666665
+134,Evanilson,Bournemouth,25,FW,1557,70.4,17.3
+135,Tyler Adams,Bournemouth,26,"D(R),M(CR)",1244,84.0,13.822222222222223
+136,Tosin Adarabioyo,Chelsea,27,D(CR),1087,91.4,12.077777777777778
+137,Alisson Becker,Liverpool,32,GK,1879,81.5,20.877777777777776
+138,Bernardo Silva,Man City,30,"M(CLR),FW",2038,88.7,22.644444444444446
+139,Illia Zabarnyi,Bournemouth,22,D(C),2366,81.2,26.288888888888888
+140,Vitalii Mykolenko,Everton,25,"D(CL),M(L)",2364,76.6,26.266666666666666
+141,Dan Burn,Newcastle,32,"D(CL),M(L)",2430,90.0,27.0
+142,Rodrigo Bentancur,Tottenham,27,M(C),1254,88.4,13.933333333333334
+143,Mikel Merino,Arsenal,28,"M(C),FW",1144,79.6,12.71111111111111
+144,Lucas Digne,Aston Villa,31,"D(CL),M(L)",2073,82.8,23.033333333333335
+145,Axel Disasi,Aston Villa,27,D(CR),360,89.9,4.0
+146,Jan Bednarek,Southampton,28,D(C),1905,92.5,21.166666666666668
+147,Kepa,Bournemouth,30,GK,1980,67.7,22.0
+148,Keane Lewis-Potter,Brentford,24,"D(L),M(CLR),FW",2374,81.2,26.377777777777776
+149,Ferdi Kadioglu,Brighton,25,"D(LR),M(CLR)",389,85.3,4.322222222222222
+150,Diogo Jota,Liverpool,28,"AM(CLR),FW",843,72.9,9.366666666666667
+151,Maximilian Kilman,West Ham,27,D(C),2539,86.6,28.211111111111112
+152,Wesley Fofana,Chelsea,24,D(C),1176,90.8,13.066666666666666
+153,Nélson Semedo,Wolves,31,"D(CLR),M(R)",2152,81.6,23.91111111111111
+154,Destiny Udogie,Tottenham,22,"D(L),M(L)",1663,88.7,18.477777777777778
+155,Harry Maguire Man Utd,,32,D(C),1359,87.3,15.1
+156,Marcus Rashford Man Utd,,27,"AM(CLR),FW",983,76.9,10.922222222222222
+157,Adam Wharton,Crystal Palace,21,DMC,847,78.7,9.411111111111111
+158,Riccardo Calafiori,Arsenal,22,D(CL),929,87.7,10.322222222222223
+159,Nick Pope,Newcastle,32,GK,1620,62.5,18.0
+160,Matthijs de Ligt Man Utd,,25,D(C),2003,90.4,22.255555555555556
+161,Jadon Sancho,Chelsea,24,AM(CLR),1434,85.5,15.933333333333334
+162,Joël Veltman,Brighton,33,"D(CR),M(R)",1647,82.2,18.3
+163,Antonín Kinsky,Tottenham,22,GK,360,77.5,4.0
+164,Levi Colwill,Chelsea,22,D(CL),2430,90.0,27.0
+165,Chris Richards,Crystal Palace,24,"D(C),DMC",1339,81.0,14.877777777777778
+166,Sasa Lukic,Fulham,28,M(C),1748,90.8,19.42222222222222
+167,Marcos Senesi,Bournemouth,27,D(C),921,77.0,10.233333333333333
+168,Dean Henderson,Crystal Palace,28,GK,2520,57.8,28.0
+169,Jaden Philogene,Ipswich,23,M(LR),460,78.9,5.111111111111111
+170,James Ward-Prowse,West Ham,30,M(CR),415,92.6,4.611111111111111
+171,Yerson Mosquera,Wolves,23,D(C),442,86.1,4.911111111111111
+172,Adama Traoré,Fulham,29,"M(CLR),FW",1407,80.9,15.633333333333333
+173,Cameron Burgess,Ipswich,29,D(CL),945,81.5,10.5
+174,Conor Townsend,Ipswich,32,"D(CL),M(L)",136,67.5,1.511111111111111
+175,Liam Delap,Ipswich,22,"AM(R),FW",2194,63.5,24.377777777777776
+176,Jørgen Strand Larsen,Wolves,25,FW,2079,64.5,23.1
+177,Toti Gomes,Wolves,26,D(CL),1806,86.1,20.066666666666666
+178,Sepp van den Berg,Brentford,23,"D(CR),M(R)",1779,84.6,19.766666666666666
+179,Timothy Castagne,Fulham,29,"D(CLR),M(LR)",1338,83.3,14.866666666666667
+180,Harry Wilson,Fulham,28,AM(CLR),836,78.7,9.28888888888889
+181,Lukasz Fabianski,West Ham,39,GK,1071,63.3,11.9
+182,Pedro Neto,Chelsea,25,"AM(CLR),FW",1531,86.7,17.011111111111113
+183,James Garner,Everton,24,M(CR),862,76.6,9.577777777777778
+184,James Milner,Brighton,39,"D(LR),M(CLR)",172,80.0,1.9111111111111112
+185,Sander Berge,Fulham,27,M(C),1647,91.0,18.3
+186,Alex Palmer,Ipswich,28,GK,450,68.0,5.0
+187,Sandro Tonali,Newcastle,24,DMC,1732,85.1,19.244444444444444
+188,Matt Doherty,Wolves,33,"D(CLR),M(LR)",1611,84.5,17.9
+189,Nico González,Man City,23,M(C),393,92.5,4.366666666666666
+190,Fabian Schär,Newcastle,33,D(C),2053,84.2,22.81111111111111
+191,Kevin Danso,Tottenham,26,D(C),348,90.9,3.8666666666666667
+192,Andy Robertson,Liverpool,31,"D(L),M(L)",2025,88.9,22.5
+193,Mateus Fernandes,Southampton,20,AM(CL),2151,83.9,23.9
+194,Dara O'Shea,Ipswich,26,D(CR),2313,79.0,25.7
+195,Bernd Leno,Fulham,33,GK,2610,79.3,29.0
+196,Facundo Buonanotte,Leicester,20,AM(CR),1318,79.0,14.644444444444444
+197,Michael Keane,Everton,32,D(CR),812,83.2,9.022222222222222
+198,Jefferson Lerma,Crystal Palace,30,"D(CR),DMC",1544,77.1,17.155555555555555
+199,Ryan Yates,Nottingham Forest,27,M(C),1543,83.4,17.144444444444446
+200,Matty Cash,Aston Villa,27,"D(R),M(CLR)",1400,84.5,15.555555555555555
+201,Konstantinos Mavropanos,West Ham,27,D(CR),1660,86.2,18.444444444444443
+202,Pape Sarr,Tottenham,22,M(C),1398,88.2,15.533333333333333
+203,Mads Hermansen,Leicester,24,GK,1936,58.2,21.511111111111113
+204,Matheus Nunes,Man City,26,"D(R),M(CLR)",1043,86.8,11.588888888888889
+205,Kostas Tsimikas,Liverpool,28,D(L),513,91.4,5.7
+206,Micky van de Ven,Tottenham,23,D(CL),819,91.0,9.1
+207,Reece James,Chelsea,25,"D(CR),DMC,M(R)",683,90.1,7.588888888888889
+208,Beto,Everton,27,FW,925,60.6,10.277777777777779
+209,Andreas Pereira,Fulham,29,M(CLR),1586,77.5,17.622222222222224
+210,Adam Webster,Brighton,30,D(C),618,86.0,6.866666666666666
+211,Orel Mangala,Everton,27,M(C),1256,90.3,13.955555555555556
+212,Emerson,West Ham,30,"D(L),M(L)",1807,81.5,20.07777777777778
+213,Will Hughes,Crystal Palace,29,M(CLR),1654,81.5,18.377777777777776
+214,Manuel Ugarte Man Utd,,23,DMC,1330,88.6,14.777777777777779
+215,Boubacar Kamara,Aston Villa,25,"D(CL),DMC",1082,90.0,12.022222222222222
+216,Caoimhín Kelleher,Liverpool,26,GK,720,71.0,8.0
+217,Emile Smith Rowe,Fulham,24,AM(CL),1744,91.3,19.377777777777776
+218,Ederson,Man City,31,GK,1710,85.4,19.0
+219,Georginio Rutter,Brighton,22,"AM(CR),FW",1667,68.6,18.522222222222222
+220,Jamie Vardy,Leicester,38,"AM(L),FW",2236,69.2,24.844444444444445
+221,Reiss Nelson,Fulham,25,M(LR),486,91.4,5.4
+222,Marc Cucurella,Chelsea,26,"D(CL),M(L)",2258,89.8,25.08888888888889
+223,Ilkay Gündogan,Man City,34,M(C),1536,92.7,17.066666666666666
+224,Ryan Manning,Southampton,28,"D(CL),M(CLR)",976,87.2,10.844444444444445
+225,Dominic Calvert-Lewin,Everton,28,"AM(L),FW",1582,63.5,17.57777777777778
+226,Tino Livramento,Newcastle,22,D(LR),1942,86.5,21.57777777777778
+227,Arijanet Muric,Ipswich,26,GK,1620,68.2,18.0
+228,Curtis Jones,Liverpool,24,M(CL),1170,94.3,13.0
+229,Ashley Young,Everton,39,"D(LR),M(LR)",1558,73.1,17.31111111111111
+230,Robin Olsen,Aston Villa,35,GK,180,70.7,2.0
+231,Amadou Onana,Aston Villa,23,DMC,1086,88.4,12.066666666666666
+232,Ethan Nwaneri,Arsenal,18,AM(R),601,88.1,6.677777777777778
+233,Yasin Ayari,Brighton,21,M(C),1448,85.0,16.08888888888889
+234,João Gomes,Wolves,24,M(C),2262,86.2,25.133333333333333
+235,Alphonse Areola,West Ham,32,GK,1540,66.4,17.11111111111111
+236,Jonny Evans Man Utd,,37,D(CL),290,89.1,3.2222222222222223
+237,Youssef Chermiti,Everton,20,FW,11,40.0,0.12222222222222222
+238,Emiliano Martínez,Aston Villa,32,GK,2432,79.7,27.022222222222222
+239,Gabriel Jesus,Arsenal,27,"AM(LR),FW",604,80.0,6.711111111111111
+240,Romain Esse,Crystal Palace,19,AM(R),8,60.0,0.08888888888888889
+241,Aaron Ramsdale,Southampton,26,GK,1890,61.2,21.0
+242,Ezri Konsa,Aston Villa,27,D(CR),2172,92.8,24.133333333333333
+243,Darwin Núñez,Liverpool,25,"AM(CL),FW",966,71.4,10.733333333333333
+244,Joe Gomez,Liverpool,27,D(CLR),519,89.4,5.766666666666667
+245,Victor Kristiansen,Leicester,22,"D(L),M(L)",2282,82.0,25.355555555555554
+246,James Justin,Leicester,27,"D(CLR),M(LR)",2281,76.9,25.344444444444445
+247,Jack Hinshelwood,Brighton,19,"D(LR),DMC",1259,85.6,13.988888888888889
+248,Leif Davis,Ipswich,25,"D(L),M(L)",2464,80.6,27.377777777777776
+249,Vitaly Janelt,Brentford,26,"D(L),DMC",2112,84.7,23.466666666666665
+250,Harvey Barnes,Newcastle,27,AM(CL),899,81.9,9.988888888888889
+251,Toby Collyer Man Utd,,21,Midfielder,175,82.2,1.9444444444444444
+252,Jacob Greaves,Ipswich,24,D(CL),1666,87.6,18.511111111111113
+253,André Onana Man Utd,,28,GK,2610,69.8,29.0
+254,Welington,Southampton,24,"D(L),M(L)",174,79.5,1.9333333333333333
+255,Robert Sánchez,Chelsea,27,GK,2070,69.4,23.0
+256,Nicolás Domínguez,Nottingham Forest,26,M(CLR),1399,87.8,15.544444444444444
+257,Rodri,Man City,28,"D(C),DMC",66,93.4,0.7333333333333333
+258,Kobbie Mainoo Man Utd,,19,M(C),1291,87.1,14.344444444444445
+259,Ben White,Arsenal,27,"D(CR),DMC",703,85.7,7.811111111111111
+260,Rúben Dias,Man City,27,D(C),1459,93.8,16.211111111111112
+261,Ross Barkley,Aston Villa,31,M(CLR),546,86.8,6.066666666666666
+262,André,Wolves,23,DMC,1758,92.9,19.533333333333335
+263,Tyler Dibling,Southampton,19,"AM(R),FW",1542,83.1,17.133333333333333
+264,Lucas Paquetá,West Ham,27,"M(CLR),FW",1813,78.6,20.144444444444446
+265,Álex Moreno,Nottingham Forest,31,"D(L),M(L)",820,76.8,9.11111111111111
+266,Carlos Alcaraz,Southampton,22,"M(CL),FW",9,100.0,0.1
+267,Fraser Forster,Tottenham,37,GK,630,82.6,7.0
+268,João Félix,Chelsea,25,"AM(CL),FW",364,86.2,4.044444444444444
+269,Lucas Bergvall,Tottenham,19,DMC,928,89.8,10.311111111111112
+270,Paul Onuachu,Southampton,30,FW,759,62.4,8.433333333333334
+271,Calvin Bassey,Fulham,25,D(CL),2444,89.9,27.155555555555555
+272,Richarlison,Tottenham,27,"AM(CLR),FW",278,69.1,3.088888888888889
+273,Rodrigo Muniz,Fulham,23,FW,806,66.7,8.955555555555556
+274,Nathan Aké,Man City,30,"D(CL),DMC",683,94.4,7.588888888888889
+275,Ibrahim Sangaré,Nottingham Forest,27,DMC,272,77.9,3.022222222222222
+276,Rico Lewis,Man City,20,"D(LR),M(C)",1703,91.8,18.92222222222222
+277,Omari Hutchinson,Ipswich,21,AM(CLR),2234,83.8,24.822222222222223
+278,Myles Lewis-Skelly,Arsenal,18,D(L),770,94.4,8.555555555555555
+279,Christian Eriksen Man Utd,,33,"M(CLR),FW",783,85.5,8.7
+280,Kristoffer Ajer,Brentford,26,"D(CLR),DMC",1214,78.4,13.488888888888889
+281,Diego Gómez,Brighton,21,AM(CL),253,82.6,2.811111111111111
+282,Jean-Ricner Bellegarde,Wolves,26,M(CLR),1292,84.4,14.355555555555556
+283,Benoît Badiashile,Chelsea,23,D(C),334,90.1,3.7111111111111112
+284,Harry Amass Man Utd,,18,Defender,21,90.9,0.23333333333333334
+285,Abdoulaye Doucouré,Everton,32,M(C),1991,82.7,22.122222222222224
+286,Tariq Lamptey,Brighton,24,"D(LR),M(R)",766,88.6,8.511111111111111
+287,Alejandro Garnacho Man Utd,,20,AM(CLR),1640,83.1,18.22222222222222
+288,Jakub Stolarczyk,Leicester,24,GK,540,64.7,6.0
+289,Bart Verbruggen,Brighton,22,GK,2430,74.9,27.0
+290,James Hill,Bournemouth,23,D(CR),425,72.9,4.722222222222222
+291,Jack Grealish,Man City,29,"M(CL),FW",606,91.0,6.733333333333333
+292,Lewis Dunk,Brighton,33,D(C),1561,91.5,17.344444444444445
+293,Bilal El Khannouss,Leicester,20,AM(C),1534,79.4,17.044444444444444
+294,Jesper Lindstrøm,Everton,25,"AM(CLR),FW",1242,78.7,13.8
+295,Alex Scott,Bournemouth,21,M(CR),373,85.8,4.144444444444445
+296,Luis Sinisterra,Bournemouth,25,"AM(LR),FW",230,83.5,2.5555555555555554
+297,John McGinn,Aston Villa,30,M(CLR),1786,87.5,19.844444444444445
+298,Takehiro Tomiyasu,Arsenal,26,D(CLR),6,75.0,0.06666666666666667
+299,Ryan Sessegnon,Fulham,24,"D(L),M(LR)",93,82.8,1.0333333333333334
+300,Jean-Clair Todibo,West Ham,25,D(C),1148,88.0,12.755555555555556
+301,Jordan Ayew,Leicester,33,"AM(CLR),FW",1304,77.9,14.488888888888889
+302,Vítezslav Jaros,Liverpool,23,GK,11,66.7,0.12222222222222222
+303,Jacob Ramsey,Aston Villa,23,AM(CLR),1258,86.5,13.977777777777778
+304,Stefan Ortega,Man City,32,GK,900,81.1,10.0
+305,Mathias Jensen,Brentford,29,M(C),737,82.0,8.188888888888888
+306,Kyle Walker-Peters,Southampton,27,"D(CLR),M(LR)",2382,91.1,26.466666666666665
+307,Christopher Nkunku,Chelsea,27,"M(CLR),FW",863,90.5,9.588888888888889
+308,Stephy Mavididi,Leicester,26,"AM(LR),FW",1398,82.9,15.533333333333333
+309,Yves Bissouma,Tottenham,28,M(C),1147,89.6,12.744444444444444
+310,Abdukodir Khusanov,Man City,21,D(C),504,91.3,5.6
+311,Kieran Trippier,Newcastle,34,"D(LR),M(R)",694,86.4,7.711111111111111
+312,Ollie Scarles,West Ham,19,Defender,403,80.7,4.477777777777778
+313,Axel Disasi,Chelsea,27,D(CR),365,91.7,4.055555555555555
+314,José Sá,Wolves,32,GK,1980,58.6,22.0
+315,Jhon Durán,Aston Villa,21,FW,627,72.3,6.966666666666667
+316,Sergio Reguilón,Tottenham,28,"D(L),M(L)",121,72.8,1.3444444444444446
+317,Sam Johnstone,Wolves,31,GK,630,62.7,7.0
+318,Trevoh Chalobah,Chelsea,25,"D(CR),DMC",296,91.7,3.2888888888888888
+319,Edson Álvarez,West Ham,27,"D(C),DMC",1548,86.5,17.2
+320,Manuel Akanji,Man City,29,"D(CLR),DMC",1710,94.5,19.0
+321,Joe Aribo,Southampton,28,"M(CLR),FW",1832,89.1,20.355555555555554
+322,Roméo Lavia,Chelsea,21,DMC,546,92.1,6.066666666666666
+323,Chadi Riad,Crystal Palace,21,D(C),90,85.4,1.0
+324,Jota Silva,Nottingham Forest,25,"AM(CLR),FW",713,67.1,7.9222222222222225
+325,Leon Bailey,Aston Villa,27,"M(CLR),FW",1143,77.3,12.7
+326,John Stones,Man City,30,"D(CR),DMC",547,91.3,6.0777777777777775
+327,Matt O'Riley,Brighton,24,M(CR),473,86.4,5.2555555555555555
+328,Billy Gilmour,Brighton,23,DMC,98,87.9,1.0888888888888888
+329,Mathys Tel,Tottenham,19,"AM(L),FW",307,81.8,3.411111111111111
+330,Niclas Füllkrug,West Ham,32,FW,368,68.8,4.088888888888889
+331,Malo Gusto,Chelsea,21,"D(R),M(R)",1550,88.9,17.22222222222222
+332,Taylor Harwood-Bellis,Southampton,23,D(CR),2122,88.6,23.57777777777778
+333,Santiago Bueno,Wolves,26,D(C),1524,88.1,16.933333333333334
+334,Luke Woolfenden,Ipswich,26,D(C),1007,88.3,11.188888888888888
+335,Philip Billing,Bournemouth,28,"M(C),FW",178,74.4,1.9777777777777779
+336,Jack Harrison,Everton,28,"AM(CLR),FW",1509,75.5,16.766666666666666
+337,Jarell Quansah,Liverpool,22,D(C),287,92.3,3.188888888888889
+338,Luke Thomas,Leicester,23,"D(L),M(L)",363,83.7,4.033333333333333
+339,Wout Faes,Leicester,26,D(CL),2093,86.8,23.255555555555556
+340,Crysencio Summerville,West Ham,23,AM(LR),784,79.2,8.71111111111111
+341,Jannik Vestergaard,Leicester,32,D(C),1396,90.8,15.511111111111111
+342,Sam Morsy,Ipswich,33,M(C),1979,88.1,21.988888888888887
+343,David Brooks,Bournemouth,27,AM(CR),732,78.9,8.133333333333333
+344,Mads Roerslev,Brentford,25,"D(R),M(R)",1097,82.1,12.188888888888888
+345,Séamus Coleman,Everton,36,"D(CR),M(R)",197,71.9,2.188888888888889
+346,Aaron Cresswell,West Ham,35,"D(CL),M(L)",541,84.1,6.011111111111111
+347,Julio Enciso,Brighton,21,AM(CL),288,73.8,3.2
+348,Emil Krafth,Newcastle,30,"D(CR),M(R)",242,80.0,2.688888888888889
+349,Eddie Nketiah,Crystal Palace,25,"AM(C),FW",704,74.3,7.822222222222222
+350,Jens Cajuste,Ipswich,25,DMC,1449,86.8,16.1
+351,Carlos Vinícius,Fulham,29,FW,3,-,0.03333333333333333
+352,Michail Antonio,West Ham,34,"D(R),M(CLR),FW",845,70.8,9.38888888888889
+353,Christian Walton,Ipswich,29,GK,540,62.8,6.0
+354,Igor Thiago,Brentford,23,FW,130,73.7,1.4444444444444444
+355,Mats Wieffer,Brighton,25,DMC,486,86.9,5.4
+356,Josh King,Fulham,18,Midfielder,79,88.9,0.8777777777777778
+357,Yehor Yarmoliuk,Brentford,21,M(C),787,87.1,8.744444444444444
+358,Morato,Nottingham Forest,23,D(CL),619,73.7,6.877777777777778
+359,Tim Iroegbunam,Everton,21,M(C),470,73.1,5.222222222222222
+360,Willy-Arnaud Boly,Nottingham Forest,34,D(C),131,78.7,1.4555555555555555
+361,Pau Torres,Aston Villa,28,D(C),1550,88.4,17.22222222222222
+362,Jack Clarke,Ipswich,24,M(LR),863,79.9,9.588888888888889
+363,Ben Johnson,Ipswich,25,"D(CLR),M(LR)",947,78.7,10.522222222222222
+364,Guido Rodríguez,West Ham,30,DMC,1026,84.6,11.4
+365,Joshua Zirkzee Man Utd,,23,"AM(C),FW",1243,72.5,13.811111111111112
+366,Caleb Okoli,Leicester,23,D(C),1004,86.9,11.155555555555555
+367,Harry Winks,Leicester,29,DMC,1541,88.9,17.122222222222224
+368,Lesley Ugochukwu,Southampton,20,DMC,1032,86.4,11.466666666666667
+369,Radu Dragusin,Tottenham,23,D(C),1254,85.2,13.933333333333334
+370,Igor Julio,Brighton,27,"D(CL),M(L)",901,92.7,10.011111111111111
+371,Filip Jørgensen,Chelsea,22,GK,540,82.4,6.0
+372,Boubakary Soumaré,Leicester,26,DMC,1563,87.3,17.366666666666667
+373,Kamaldeen Sulemana,Southampton,23,"AM(L),FW",738,82.9,8.2
+374,Tyrique George,Chelsea,19,Forward,84,87.2,0.9333333333333333
+375,Antony Man Utd,,25,AM(R),135,81.4,1.5
+376,Issa Diop,Fulham,28,D(C),1259,87.5,13.988888888888889
+377,Ian Maatsen,Aston Villa,23,"D(L),M(CLR)",607,87.5,6.7444444444444445
+378,Victor Lindelöf Man Utd,,30,D(CLR),240,90.4,2.6666666666666665
+379,Pedro Lima,Wolves,18,Defender,70,76.9,0.7777777777777778
+380,Adam Smith,Bournemouth,33,"D(LR),M(LR)",1041,78.9,11.566666666666666
+381,Max Aarons,Bournemouth,25,D(R),86,80.4,0.9555555555555556
+382,Sam Szmodics,Ipswich,29,"AM(CL),FW",988,76.8,10.977777777777778
+383,Nathan Broadhead,Ipswich,26,"AM(CLR),FW",449,82.2,4.988888888888889
+384,Axel Tuanzebe,Ipswich,27,D(CR),1100,86.9,12.222222222222221
+385,Lamare Bogarde,Aston Villa,21,DMC,476,88.1,5.288888888888889
+386,Luke Shaw Man Utd,,29,"D(CL),M(L)",68,88.1,0.7555555555555555
+387,Leny Yoro Man Utd,,19,D(C),698,93.0,7.7555555555555555
+388,Chiedozie Ogbene,Ipswich,27,"M(CLR),FW",240,79.5,2.6666666666666665
+389,Daichi Kamada,Crystal Palace,28,"AM(CLR),FW",981,81.7,10.9
+390,Danny Ings,West Ham,32,"AM(C),FW",274,71.6,3.0444444444444443
+391,Ramón Sosa,Nottingham Forest,25,AM(LR),232,72.5,2.577777777777778
+392,Timo Werner,Tottenham,29,"AM(CLR),FW",508,74.2,5.644444444444445
+393,Lewis Miley,Newcastle,18,M(C),188,88.9,2.088888888888889
+394,Dane Scarlett,Tottenham,21,FW,31,60.0,0.34444444444444444
+395,Charlie Taylor,Southampton,31,"D(CL),M(L)",263,92.5,2.922222222222222
+396,Brajan Gruda,Brighton,20,AM(CR),384,77.0,4.266666666666667
+397,Simon Adingra,Brighton,23,"M(LR),FW",618,81.9,6.866666666666666
+398,Vladimír Coufal,West Ham,32,"D(CR),M(R)",735,80.5,8.166666666666666
+399,Carlos Soler,West Ham,28,M(CLR),1100,87.4,12.222222222222221
+400,Sean Longstaff,Newcastle,27,DMC,739,85.8,8.21111111111111
+401,Danilo,Nottingham Forest,23,M(C),171,83.8,1.9
+402,Matt Targett,Newcastle,29,"D(L),M(L)",12,100.0,0.13333333333333333
+403,Nathan Wood,Southampton,22,D(C),625,93.8,6.944444444444445
+404,Alex McCarthy,Southampton,35,GK,450,69.8,5.0
+405,Rodrigo Gomes,Wolves,21,M(LR),564,68.3,6.266666666666667
+406,Renato Veiga,Chelsea,21,D(CL),177,84.1,1.9666666666666666
+407,Conor Chaplin,Ipswich,28,"AM(CLR),FW",611,76.3,6.788888888888889
+408,Tom Cairney,Fulham,34,M(CR),427,93.7,4.7444444444444445
+409,Kyle Walker,Man City,34,"D(CR),M(R)",967,88.6,10.744444444444444
+410,Cheick Doucouré,Crystal Palace,25,DMC,447,85.7,4.966666666666667
+411,Samuel Edozie,Southampton,22,AM(CLR),64,82.8,0.7111111111111111
+412,Hákon Valdimarsson,Brentford,23,GK,144,61.9,1.6
+413,Rasmus Højlund Man Utd,,22,FW,1441,78.7,16.011111111111113
+414,Fábio Carvalho,Brentford,22,"AM(CL),FW",447,74.7,4.966666666666667
+415,Armel Bella-Kotchap,Southampton,23,D(C),329,90.6,3.6555555555555554
+416,Hamza Choudhury,Leicester,27,"D(R),DMC",130,89.5,1.4444444444444444
+417,Pablo Sarabia,Wolves,32,"D(L),M(CLR),FW",565,76.1,6.277777777777778
+418,James Bree,Southampton,27,"D(CLR),M(R)",892,87.0,9.911111111111111
+419,Evan Ferguson,West Ham,20,FW,92,78.3,1.0222222222222221
+420,Craig Dawson,Wolves,34,D(CR),969,86.7,10.766666666666667
+421,Lloyd Kelly,Newcastle,26,D(CL),302,81.2,3.3555555555555556
+422,Enes Ünal,Bournemouth,27,FW,332,67.0,3.688888888888889
+423,Joe Willock,Newcastle,25,M(C),811,86.6,9.011111111111111
+424,Armando Broja,Everton,23,FW,168,81.1,1.8666666666666667
+425,Joachim Andersen,Crystal Palace,28,D(C),90,74.4,1.0
+426,Solly March,Brighton,30,M(CLR),37,56.3,0.4111111111111111
+427,Raheem Sterling,Arsenal,30,"M(CLR),FW",307,82.5,3.411111111111111
+428,Flynn Downes,Southampton,26,"D(C),M(C)",1526,90.6,16.955555555555556
+429,Kasey McAteer,Leicester,23,AM(CLR),391,75.2,4.344444444444444
+430,Ben Chilwell,Crystal Palace,28,"D(L),M(L)",50,73.9,0.5555555555555556
+431,James McAtee,Man City,22,AM(CR),123,86.7,1.3666666666666667
+432,Rico Henry,Brentford,27,"D(L),M(L)",3,33.3,0.03333333333333333
+433,Wilson Odobert,Tottenham,20,"AM(CLR),FW",351,82.0,3.9
+434,Harvey Elliott,Liverpool,21,AM(CR),121,85.1,1.3444444444444446
+435,Nathan Patterson,Everton,23,"D(R),M(R)",124,78.2,1.3777777777777778
+436,Kalvin Phillips,Ipswich,29,"D(C),DMC",1210,81.4,13.444444444444445
+437,Jorge Cuenca,Fulham,25,D(CL),169,83.3,1.8777777777777778
+438,Jakub Kiwior,Arsenal,25,"D(CL),DMC",323,84.9,3.588888888888889
+439,Gonçalo Guedes,Wolves,28,"AM(CLR),FW",764,75.7,8.488888888888889
+440,Diego Carlos,Aston Villa,32,D(C),829,89.0,9.21111111111111
+441,Justin Devenny,Crystal Palace,21,Midfielder,314,77.5,3.488888888888889
+442,Nico O'Reilly,Man City,20,Midfielder,21,94.1,0.23333333333333334
+443,Wes Burns,Ipswich,30,"D(R),M(LR)",933,69.8,10.366666666666667
+444,Yukinari Sugawara,Southampton,24,"D(R),M(R)",1444,84.5,16.044444444444444
+445,Conor Bradley,Liverpool,21,"D(R),M(R)",365,84.4,4.055555555555555
+446,Adam Lallana,Southampton,36,M(CLR),357,85.5,3.966666666666667
+447,Kiernan Dewsbury-Hall,Chelsea,26,M(C),194,87.6,2.1555555555555554
+448,Oleksandr Zinchenko,Arsenal,28,"D(L),M(CLR)",294,82.0,3.2666666666666666
+449,George Hirst,Ipswich,26,FW,260,56.5,2.888888888888889
+450,Jorginho,Arsenal,33,DMC,546,86.0,6.066666666666666
+451,Archie Gray,Tottenham,19,"D(CR),DMC",1240,90.9,13.777777777777779
+452,Paris Maghoma,Brentford,23,DMC,106,92.4,1.1777777777777778
+453,Harry Toffolo,Nottingham Forest,29,"D(L),M(L)",45,85.7,0.5
+454,Mykhailo Mudryk,Chelsea,24,AM(L),146,77.1,1.6222222222222222
+455,Jack Taylor,Ipswich,26,M(C),479,83.2,5.322222222222222
+456,Mikey Moore,Tottenham,17,AM(R),182,85.2,2.022222222222222
+457,Kieran Tierney,Arsenal,27,"D(CL),M(L)",77,82.1,0.8555555555555555
+458,Adam Armstrong,Southampton,28,"AM(CLR),FW",1255,83.6,13.944444444444445
+459,Andy Irving,West Ham,24,Midfielder,162,90.0,1.8
+460,Patrick Dorgu Man Utd,,20,"D(L),M(LR)",223,82.7,2.477777777777778
+461,Kosta Nedeljkovic,Aston Villa,19,D(R),121,90.2,1.3444444444444446
+462,Eric da Silva Moreira,Nottingham Forest,18,Forward,28,83.3,0.3111111111111111
+463,Chiquinho,Wolves,25,AM(LR),6,100.0,0.06666666666666667
+464,Michael Kayode,Brentford,20,D(R),30,76.5,0.3333333333333333
+465,Hwang Hee-Chan,Wolves,29,"AM(CLR),FW",631,83.5,7.011111111111111
+466,Evan Ferguson,Brighton,20,FW,236,75.4,2.6222222222222222
+467,Oliver Skipp,Leicester,24,DMC,773,85.4,8.588888888888889
+468,Patson Daka,Leicester,26,FW,454,74.4,5.044444444444444
+469,Maxwel Cornet,Southampton,28,"D(L),M(LR),FW",72,89.5,0.8
+470,Reiss Nelson,Arsenal,25,M(LR),2,-,0.022222222222222223
+471,Willian,Fulham,36,AM(CLR),129,88.2,1.4333333333333333
+472,Tommy Doyle,Wolves,23,M(C),477,85.4,5.3
+473,Cameron Archer,Southampton,23,FW,1177,82.2,13.077777777777778
+474,Donyell Malen,Aston Villa,26,"AM(CLR),FW",169,78.4,1.8777777777777778
+475,James Ward-Prowse,Nottingham Forest,30,M(CR),399,86.4,4.433333333333334
+476,Ben Mee,Brentford,35,D(CL),181,77.6,2.011111111111111
+477,Woyo Coulibaly,Leicester,25,D(R),108,84.1,1.2
+478,Will Smallbone,Southampton,25,M(CR),553,82.5,6.144444444444445
+479,Conor Coady,Leicester,32,"D(CR),DMC",904,90.8,10.044444444444444
+480,Ryan Trevitt,Brentford,22,M(C),3,66.7,0.03333333333333333
+481,Federico Chiesa,Liverpool,27,"M(CLR),FW",25,88.2,0.2777777777777778
+482,Wataru Endo,Liverpool,32,DMC,138,94.0,1.5333333333333334
+483,Bobby De Cordova-Reid,Leicester,32,"D(R),M(CLR),FW",636,75.9,7.066666666666666
+484,Jakub Moder,Brighton,25,M(CL),9,81.0,0.1
+485,Miguel Almirón,Newcastle,31,"AM(CLR),FW",151,82.8,1.6777777777777778
+486,Jeremy Sarmiento,Brighton,22,AM(CL),8,100.0,0.08888888888888889
+487,Joe Lumley,Southampton,30,GK,270,67.6,3.0
+488,Daniel Jebbison,Bournemouth,21,FW,61,84.6,0.6777777777777778
+489,Jayden Meghoma,Brentford,18,"D(L),M(L)",4,100.0,0.044444444444444446
+490,Julián Araujo,Bournemouth,23,"D(R),M(R)",357,81.2,3.966666666666667
+491,Lewis Orford,West Ham,19,Midfielder,47,86.5,0.5222222222222223
+492,Asher Agbinone,Crystal Palace,19,Midfielder,4,100.0,0.044444444444444446
+493,Yunus Konak,Brentford,19,DMC,27,73.1,0.3
+494,Ben Winterburn,Bournemouth,20,Midfielder,9,50.0,0.1
+495,Luis Guilherme,West Ham,19,Forward,50,86.4,0.5555555555555556
+496,Chido Obi Man Utd,,17,Forward,26,75.0,0.28888888888888886
+497,Divin Mubama,Man City,20,Forward,27,66.7,0.3
+498,Ricardo Pereira,Leicester,31,"D(LR),M(R)",154,87.6,1.711111111111111
+499,Caleb Kporha,Crystal Palace,18,Defender,11,75.0,0.12222222222222222
+500,Carlos Forbs,Wolves,21,AM(LR),233,69.7,2.588888888888889
+501,Albert Grønbæk,Southampton,23,AM(CL),143,76.5,1.5888888888888888
+502,Alfie Dorrington,Tottenham,19,Defender,13,93.8,0.14444444444444443
+503,Martial Godo,Fulham,22,AM(LR),14,75.0,0.15555555555555556
+504,Roman Dixon,Everton,20,Defender,90,56.3,1.0
+505,Mason Mount Man Utd,,26,M(CLR),249,83.1,2.7666666666666666
+506,Andrés García,Aston Villa,22,D(R),269,92.0,2.988888888888889
+507,Taiwo Awoniyi,Nottingham Forest,27,FW,266,67.1,2.9555555555555557
+508,Ben Brereton,Southampton,25,"AM(LR),FW",448,79.2,4.977777777777778
+509,Emiliano Buendía,Aston Villa,28,"M(CLR),FW",89,81.7,0.9888888888888889
+510,Massimo Luongo,Ipswich,32,M(C),181,76.5,2.011111111111111
+511,Odsonne Édouard,Leicester,27,"AM(L),FW",26,75.0,0.28888888888888886
+512,Kim Ji-Soo,Brentford,20,Defender,29,89.3,0.32222222222222224
+513,Daniel Podence,Wolves,29,"AM(CLR),FW",47,73.3,0.5222222222222223
+514,Ross Stewart,Southampton,28,"AM(L),FW",131,80.0,1.4555555555555555
+515,Scott McTominay Man Utd,,28,"D(C),M(C)",17,100.0,0.18888888888888888
+516,Nathaniel Clyne,Crystal Palace,33,"D(CLR),M(R)",395,75.2,4.388888888888889
+517,Jeffrey Schlupp,Crystal Palace,32,"D(L),M(CLR)",95,86.0,1.0555555555555556
+518,Marc Guiu,Chelsea,19,Forward,71,68.8,0.7888888888888889
+519,Sam Amo-Ameyaw,Southampton,18,Midfielder,26,100.0,0.28888888888888886
+520,Mathis Amougou,Chelsea,19,M(C),7,100,0.07777777777777778
+521,William Osula,Newcastle,21,FW,65,42.9,0.7222222222222222
+522,Harrison Reed,Fulham,30,"D(R),M(CR)",71,81.4,0.7888888888888889
+523,Tyrell Malacia Man Utd,,25,"D(L),M(L)",101,89.6,1.1222222222222222
+524,Jahmai Simpson-Pusey,Man City,19,Defender,95,93,1.0555555555555556
+525,Ronnie Edwards,Southampton,21,D(C),12,100,0.13333333333333333
+526,Josh Acheampong,Chelsea,18,Defender,169,83.7,1.8777777777777778
+527,Alfie Pond,Wolves,21,Defender,1,100,0.011111111111111112
+528,Jay Stansfield,Fulham,22,"AM(CL),FW",1,-,0.011111111111111112
+529,Kaelan Casey,West Ham,20,Defender,1,-,0.011111111111111112
+530,Nasser Djiga,Wolves,22,D(C),18,100,0.2
+531,Remy Rees-Dottin,Bournemouth,19,Forward,1,-,0.011111111111111112
+532,Shumaira Mheuka,Chelsea,17,Forward,1,-,0.011111111111111112
+533,Will Alves,Leicester,19,Midfielder,1,100,0.011111111111111112
+534,Zain Silcott-Duberry,Bournemouth,19,Forward,1,50,0.011111111111111112
+535,Will Lankshear,Tottenham,19,Forward,10,-,0.1111111111111111
+536,Ali Al-Hamadi,Ipswich,23,FW,125,83.3,1.3888888888888888
+537,George Edmundson,Ipswich,27,D(C),1,50,0.011111111111111112
+538,Ryan Fraser,Southampton,31,"M(CLR),FW",307,85.1,3.411111111111111
+539,Danny Ward,Leicester,31,GK,135,72.7,1.5
+540,Jack Stephens,Southampton,31,D(CLR),809,92.7,8.988888888888889
+541,Odsonne Édouard,Crystal Palace,27,"AM(L),FW",116,63,1.288888888888889
+542,Harrison Armstrong,Everton,18,M(C),47,53.8,0.5222222222222223
+543,Frank Onyeka,Brentford,27,DMC,23,85.7,0.25555555555555554
+544,Marcus Harness,Ipswich,29,"M(CLR),FW",43,62.5,0.4777777777777778
+545,Jaden Philogene,Aston Villa,23,M(LR),326,76.5,3.6222222222222222
+546,Callum Wilson,Newcastle,33,FW,158,74.1,1.7555555555555555
+547,Jordan Ayew,Crystal Palace,33,"AM(CLR),FW",20,88.9,0.2222222222222222
+548,Mason Holgate,Everton,28,"D(CR),DMC,M(R)",5,-,0.05555555555555555
+549,Harry Clarke,Ipswich,24,"D(CR),M(R)",378,82.2,4.2
+550,Jayden Danns,Liverpool,19,Forward,10,100.0,0.1111111111111111
+551,Ben Godfrey,Ipswich,27,D(CLR),110,83.3,1.2222222222222223
