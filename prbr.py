@@ -168,7 +168,7 @@ def calculate_progressive_passes(df):
     
     return df
 
-def plot_post_recovery_passes(player_data, player_name, team_name, games_played):
+def plot_post_recovery_passes(player_data, player_name, team_name, games_played, player_stats):
     """
     Plot post-recovery passes on a football pitch.
     
@@ -177,10 +177,16 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played)
     player_name (str): Name of the player
     team_name (str): Name of the player's team
     games_played (float): Number of 90-minute games played
+    player_stats (DataFrame): Player statistics including ball retention and progressive passes percentages
     
     Returns:
     matplotlib.figure.Figure: The resulting figure
     """
+    # Get player stats from the stats dataframe
+    player_row = player_stats[player_stats['player'] == player_name].iloc[0]
+    ball_retention_pct = player_row['Ball_Retention_%']
+    prog_passes_pct = player_row['%_Prog_Passes']
+    
     # Filter for ball recoveries
     recov_data = player_data[player_data['type'] == 'BallRecovery']
     
@@ -215,13 +221,13 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played)
     unsucc_PR = len(unsucc_pass_afrecov)
     prog_PR = len(succ_pass_afrecov_prog)
     
+    # Count fouls (fix: previously undefined variable)
+    foul_PR = len(recov_data[recov_data['type_n'] == 'Foul'])
+    
     # Calculate per-90 stats
     succ_PR_per90 = succ_PR / games_played if games_played > 0 else 0
     unsucc_PR_per90 = unsucc_PR / games_played if games_played > 0 else 0
     prog_PR_per90 = prog_PR / games_played if games_played > 0 else 0
-    
-    # Calculate ball retention percentage for passes
-    pass_retention = (succ_PR / (succ_PR + unsucc_PR)) * 100 if (succ_PR + unsucc_PR) > 0 else 0
     
     # Create the plot
     fig, ax = plt.subplots(figsize=(15.5, 10))
@@ -290,7 +296,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played)
     )
     fig_text(
         0.518, 0.892,
-        f"{pass_retention:.1f}% of the Balls that {player_name.split()[0] if player_name else 'Player'} Recovers end up in a successful PASS",
+        f"{ball_retention_pct:.1f}% of the Balls that {player_name.split()[0] if player_name else 'Player'} Recovers end up in a successful PASS",
         font='Arial Rounded MT Bold', size=18,
         ha="center", color="#FFFFFF", fontweight='bold'
     )
@@ -301,7 +307,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played)
     )
     fig_text(
         0.265, 0.105, 
-        f"<Successful Passes = {succ_PR} ({succ_PR_per90:.2f})>\n<Progressive Passes = {prog_PR} ({prog_PR_per90:.2f})>\n<Unsuccessful Passes = {unsucc_PR} ({unsucc_PR_per90:.2f})>",
+        f"<Successful Passes = {succ_PR} ({succ_PR_per90:.2f})>\n<Progressive Passes = {prog_PR} ({prog_PR_per90:.2f}) ({prog_passes_pct:.1f}%)>\n<Unsuccessful Passes = {unsucc_PR} ({unsucc_PR_per90:.2f})>",
         font='Arial Rounded MT Bold', size=16,
         ha="center", color="#FFFFFF", fontweight='bold', 
         highlight_textprops=[{"color": '#24a8ff'}, {"color": '#03fc24'}, {"color": "#FF5959"}]
@@ -456,7 +462,8 @@ try:
                     player_data,
                     selected_player,
                     player_team,
-                    player_90s
+                    player_90s,
+                    filtered_stats  # Pass the player stats to use the correct Ball_Retention_% value
                 )
                 st.pyplot(fig)
                 
@@ -470,7 +477,7 @@ try:
                     data=buf,
                     file_name=f"{selected_player}_post_recovery_passes.png",
                     mime="image/png"
-)
+                )
             else:
                 st.warning("No data available for the selected player.")
         else:
