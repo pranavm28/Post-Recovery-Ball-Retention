@@ -20,6 +20,15 @@ st.set_page_config(
 st.title("⚽ Premier League Post-Recovery Actions Analysis")
 st.markdown("Analyze how players perform immediately after ball recoveries in the Premier League 2024-25")
 
+
+font_path = os.path.join(os.path.dirname(__file__), "ArialRoundedMTBold.ttf")
+
+# Load the font
+custom_font = font_manager.FontProperties(fname=font_path)
+
+# Apply it globally
+plt.rcParams["font.family"] = custom_font.get_name()
+
 @st.cache_data
 def load_data():
     """Load and preprocess data files"""
