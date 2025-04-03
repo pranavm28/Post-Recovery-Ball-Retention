@@ -7,6 +7,7 @@ from mplsoccer import Pitch
 from highlight_text import fig_text
 import os
 import io
+from matplotlib import font_manager
 
 # Set page configuration
 st.set_page_config(
