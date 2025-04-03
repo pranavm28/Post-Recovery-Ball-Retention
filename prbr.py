@@ -479,6 +479,14 @@ try:
 except Exception as e:
     st.error(f"An error occurred: {e}")
     #st.info("Make sure the data files 'PL_24_25_INT_BREAK.csv' and 'PL_24_25_Mins_INT_BREAK.csv' are in the same directory as this script.")
+
+
+    with st.sidebar:
+        st.markdown("---")
+        st.markdown("### Connect with me")
+        st.markdown("- 🐦 [Twitter](https://twitter.com/pranav_m28)")
+        st.markdown("- 🔗 [GitHub](https://github.com/pranavm28)")
+        st.markdown("- ❤️ [BuyMeACoffee](https://buymeacoffee.com/pranav_m28)")
     
 # Footer
 st.markdown("---")
