@@ -21,14 +21,14 @@ st.title("⚽ Premier League Post-Recovery Actions Analysis")
 st.markdown("Analyze how players perform immediately after ball recoveries in the Premier League 2024-25")
 
 
-@st.cache_data
+@st.cache_data(show_spinner=True)
 def load_data():
     """Load and preprocess data files"""
     # Load events data
-    #events_file = "PL_24_25_INT_BREAK.csv"
+    events_file = "PL_24_25_INT_BREAK.parquet"
     minutes_file = "PL_24_25_Mins_INT_BREAK.csv"
     
-    events_data = pd.read_csv("hf://datasets/pranavm28/PL_24_25/PL_24_25_INT_BREAK.csv")
+    events_data = pd.read_parquet(events_file)
     minutes_data = pd.read_csv(minutes_file)
     events_data['x'] = events_data['x']*1.2
     events_data['y'] = events_data['y']*.8
