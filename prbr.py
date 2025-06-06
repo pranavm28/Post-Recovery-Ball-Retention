@@ -22,24 +22,16 @@ st.markdown("Analyze how players perform immediately after ball recoveries in th
 
 
 @st.cache_data(show_spinner=True)
-def load_data():
+def load_data(hf_url):
     """Load and preprocess data files"""
     # Load events data
-    events_file = "PL_24_25_INT_BREAK.parquet"
-    minutes_file = "PL_24_25_Mins_INT_BREAK.csv"
-    
-    events_data = pd.read_parquet(events_file)
-    minutes_data = pd.read_csv(minutes_file)
+    events_data = pd.read_parquet(hf_url)
     events_data['x'] = events_data['x']*1.2
     events_data['y'] = events_data['y']*.8
     events_data['endX'] = events_data['endX']*1.2
     events_data['endY'] = events_data['endY']*.8
-    
-    # Ensure minutes data has '90s_played' column
-    if 'Mins' in minutes_data.columns:
-        minutes_data['90s_played'] = minutes_data['Mins'] / 90
-    
-    return events_data, minutes_data
+
+    return events_data
 
 def analyze_post_recovery_actions(data, min_90s_played=0):
     """
@@ -450,7 +442,11 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
 # Main app logic
 try:
     # Load data from system files
-    events_data, minutes_data = load_data()
+    mins_csv_path = "T5_League_Mins_2025.csv"
+    minutes_data = pd.read_csv(mins_csv_path)
+    # Ensure minutes data has '90s_played' column
+    if 'Mins' in minutes_data.columns:
+        minutes_data['90s_played'] = minutes_data['Mins'] / 90
     
     # Filter options in sidebar
     with st.sidebar:
@@ -463,14 +459,42 @@ try:
         max_value=float(round(minutes_data['90s_played'].max())) if '90s_played' in minutes_data.columns else 10.0,
         value=1.0,
         step=0.5
-)
+        )
+        
+        # League and Season Definitions
+        leagues = ['ESP-La Liga', 'ENG-Premier League', 'ITA-Serie A', 'GER-Bundesliga', 'FRA-Ligue 1'] # Match Parquet 'league' column
+        # Season Mapping: Display Value -> Internal Value (for loading)
+        season_mapping = {
+            "2024/2025": 2425,
+            # Add more seasons here if needed, e.g., "2022/2023": "2223"
+        }
+        season_display_options = list(season_mapping.keys())
+        
+        # Season Selection with Mapping
+        selected_season_display = st.sidebar.selectbox("Select Season", season_display_options)
+        selected_season_internal = season_mapping[selected_season_display] # Get internal value for loading
+
+        selected_league = st.sidebar.selectbox("Select League", leagues)
+        
+        # --- Data Loading ---
+        leagues_to_file = {
+            'ESP-La Liga': 'La_Liga_24_25.parquet',
+            'ENG-Premier League': 'Premier_League_2425.parquet',
+            'ITA-Serie A': 'Serie_A_2425.parquet',
+            'GER-Bundesliga': 'Bundesliga_2425.parquet',
+            'FRA-Ligue 1': 'Ligue_1_2425.parquet'
+        }
+        
+        hf_url = leagues_to_file[selected_league] # Get the file name for the selected league
+        
+        events_data = load_data(hf_url)  # Load the events data
         
         # Team filter
         available_teams = sorted(events_data['team'].unique())
         selected_teams = st.multiselect(
             "Select teams:",
             available_teams,
-            default=available_teams[:5] if len(available_teams) > 5 else available_teams
+            default=available_teams
         )
         
         # Apply team filter to events data
@@ -616,4 +640,4 @@ except Exception as e:
     
 # Footer
 st.markdown("---")
-st.markdown("Created by @pranav_m28 | Data source: Opta | Premier League 2024-25 | Updated till GW29")
+st.markdown("Created by @pranav_m28 | Data source: Opta | Premier League 2024-25 | Updated till GW38")
