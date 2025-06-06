@@ -21,7 +21,7 @@ st.title("⚽ Premier League Post-Recovery Actions Analysis")
 st.markdown("Analyze how players perform immediately after ball recoveries in the Premier League 2024-25")
 
 
-@st.cache_data(show_spinner=True, max_entries=2)
+@st.cache_data(show_spinner=True, max_entries=1)
 def load_data(hf_url):
     """Load and preprocess data files"""
     # Load events data
