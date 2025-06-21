@@ -13,7 +13,8 @@ from matplotlib import font_manager
 st.set_page_config(
     page_title="Football Post-Recovery Analysis",
     page_icon="⚽",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
 
 # App title and description
