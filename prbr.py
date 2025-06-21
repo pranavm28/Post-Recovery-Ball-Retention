@@ -334,6 +334,8 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played,
     
     return fig
 
+# Replace the existing analyze_post_recovery_actions function with this version
+
 @st.cache_data(show_spinner=True, max_entries=3)
 def analyze_post_recovery_actions(data, min_90s_played=0):
     """
@@ -346,6 +348,9 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
     Returns:
     DataFrame: Player statistics for post-recovery actions
     """
+    # Make a copy to avoid modifying the original cached data
+    data = data.copy()
+    
     # Create shifted columns to link each event with the next event
     data['x_n'] = data['x'].shift(-1)
     data['y_n'] = data['y'].shift(-1)
@@ -366,6 +371,17 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
     
     # Extract the post-recovery events
     PR_df = data[data['PR_pass'] == True].copy()
+    
+    # Check if we have any post-recovery data
+    if PR_df.empty:
+        # Return empty results with proper structure
+        empty_stats = pd.DataFrame(columns=[
+            'player', 'team', 'Ball_Retention_%', 'Total_Recoveries',
+            'Progressive_Pass_PR', '%_Prog_Passes', 'Successful_Pass_PR', 'Unsuccessful_Pass_PR',
+            'Successful_TakeOn_PR', 'Unsuccessful_TakeOn_PR', 'Dispossessed_PR', 
+            'OffsidePass_PR', 'Foul_PR'
+        ])
+        return empty_stats, pd.DataFrame()
     
     # Calculate post-recovery progressive passes
     PR_df = calculate_progressive_passes(PR_df)
@@ -391,7 +407,7 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
         Dispossessed_PR=('Dispossessed_PR', 'sum'),
         OffsidePass_PR=('OffsidePass_PR', 'sum'),
         Foul_PR=('Foul_PR', 'sum'),
-        Progressive_Pass_PR=('Successful_Progressive_Pass_PR', 'sum')  # Changed to only count successful progressive passes
+        Progressive_Pass_PR=('Successful_Progressive_Pass_PR', 'sum')
     ).reset_index()
     
     # Get total ball recoveries per player
@@ -406,7 +422,7 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
     ) / (
         PR_df_grouped['Successful_Pass_PR'] + PR_df_grouped['Unsuccessful_Pass_PR'] +
         PR_df_grouped['Dispossessed_PR'] + PR_df_grouped['OffsidePass_PR'] +
-        PR_df_grouped['Unsuccessful_TakeOn_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR'] + 0.0001  # Add small value to prevent division by zero
+        PR_df_grouped['Unsuccessful_TakeOn_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR'] + 0.0001
     ) * 100
     
     # Calculate progressive passes percentage
@@ -439,6 +455,30 @@ def analyze_post_recovery_actions(data, min_90s_played=0):
     final_df = merged_df[columns_to_display]
     
     return final_df, PR_df
+
+# Add a helper function to prepare data for plotting
+def prepare_player_data_for_plotting(player_data):
+    """
+    Prepare player data by adding shifted columns needed for plotting.
+    
+    Parameters:
+    player_data (DataFrame): Event data for a specific player
+    
+    Returns:
+    DataFrame: Player data with shifted columns added
+    """
+    player_data = player_data.copy()
+    
+    # Add shifted columns if they don't exist
+    if 'type_n' not in player_data.columns:
+        player_data['x_n'] = player_data['x'].shift(-1)
+        player_data['y_n'] = player_data['y'].shift(-1)
+        player_data['endX_n'] = player_data['endX'].shift(-1)
+        player_data['endY_n'] = player_data['endY'].shift(-1)
+        player_data['type_n'] = player_data['type'].shift(-1)
+        player_data['outcomeType_n'] = player_data['outcomeType'].shift(-1)
+    
+    return player_data
 
 # Main app logic
 try:
@@ -597,22 +637,33 @@ try:
             
             # Filter data for the selected player
             player_data = filtered_events[filtered_events['player'] == selected_player]
-            
+
             # Create and display visualization
             if not player_data.empty:
+                # Prepare the player data with shifted columns for plotting
+                prepared_player_data = prepare_player_data_for_plotting(player_data)
+                
                 fig = plot_post_recovery_passes(
-                    player_data,
+                    prepared_player_data,  # Use the prepared data instead
                     selected_player,
                     player_team,
                     player_90s,
-                    filtered_stats  # Pass the player stats to use the correct Ball_Retention_% value
+                    filtered_stats
                 )
                 st.pyplot(fig)
                 
                 plt.close(fig)  # Close the figure to free up memory
                 
                 # Add download button
-                buf = io.BytesIO()  # Use io.BytesIO() instead of plt.io.BytesIO()
+                buf = io.BytesIO()
+                # Recreate the figure for download
+                fig = plot_post_recovery_passes(
+                    prepared_player_data,
+                    selected_player,
+                    player_team,
+                    player_90s,
+                    filtered_stats
+                )
                 plt.savefig(buf, format='png', dpi=300, bbox_inches='tight')
                 plt.close(fig)  # Close the figure to free up memory
                 buf.seek(0)
