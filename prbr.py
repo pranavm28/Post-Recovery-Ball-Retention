@@ -17,11 +17,11 @@ st.set_page_config(
 )
 
 # App title and description
-st.title("⚽ Premier League Post-Recovery Actions Analysis")
-st.markdown("Analyze how players perform immediately after ball recoveries in the Premier League 2024-25")
+st.title("⚽ Post-Recovery Actions Analysis")
+st.markdown("Analyze how players perform immediately after ball recoveries in the Top 5 EU leagues 2024-25")
 
 
-# @st.cache_data(show_spinner=True, max_entries=1)
+@st.cache_data(show_spinner=True, max_entries=3)
 def load_data(hf_url):
     """Load and preprocess data files"""
     # Load events data
@@ -334,6 +334,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played,
     
     return fig
 
+@st.cache_data(show_spinner=True, max_entries=3)
 def analyze_post_recovery_actions(data, min_90s_played=0):
     """
     Analyze post-recovery actions including ball retention and progressive passes.
@@ -608,9 +609,12 @@ try:
                 )
                 st.pyplot(fig)
                 
+                plt.close(fig)  # Close the figure to free up memory
+                
                 # Add download button
                 buf = io.BytesIO()  # Use io.BytesIO() instead of plt.io.BytesIO()
                 plt.savefig(buf, format='png', dpi=300, bbox_inches='tight')
+                plt.close(fig)  # Close the figure to free up memory
                 buf.seek(0)
 
                 st.download_button(
@@ -640,4 +644,4 @@ except Exception as e:
     
 # Footer
 st.markdown("---")
-st.markdown("Created by @pranav_m28 | Data source: Opta | Premier League 2024-25 | Updated till GW38")
+st.markdown("Created by @pranav_m28 | Data source: Opta | Top 5 European Leagues 2024-25 | Updated till GW38")
