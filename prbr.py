@@ -22,7 +22,7 @@ st.title("⚽ Post-Recovery Actions Analysis")
 st.markdown("Analyze how players perform immediately after ball recoveries in the Top 5 EU leagues 2024-25")
 
 
-@st.cache_data(show_spinner=True, max_entries=3)
+# @st.cache_data(show_spinner=True, max_entries=3)
 def load_data(hf_url):
     """Load and preprocess data files"""
     # Load events data
@@ -337,7 +337,7 @@ def plot_post_recovery_passes(player_data, player_name, team_name, games_played,
 
 # Replace the existing analyze_post_recovery_actions function with this version
 
-@st.cache_data(show_spinner=True, max_entries=3)
+# @st.cache_data(show_spinner=True, max_entries=3)
 def analyze_post_recovery_actions(data, min_90s_played=0):
     """
     Analyze post-recovery actions including ball retention and progressive passes.
