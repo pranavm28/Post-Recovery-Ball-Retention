@@ -33,110 +33,110 @@ def load_data(hf_url):
 
     return events_data
 
-def analyze_post_recovery_actions(data, min_90s_played=0):
-    """
-    Analyze post-recovery actions including ball retention and progressive passes.
+# def analyze_post_recovery_actions(data, min_90s_played=0):
+#     """
+#     Analyze post-recovery actions including ball retention and progressive passes.
     
-    Parameters:
-    data (DataFrame): Event data with x, y coordinates and event types
-    min_90s_played (float): Minimum number of 90-minute matches played to include player
+#     Parameters:
+#     data (DataFrame): Event data with x, y coordinates and event types
+#     min_90s_played (float): Minimum number of 90-minute matches played to include player
     
-    Returns:
-    DataFrame: Player statistics for post-recovery actions
-    """
-    # Create shifted columns to link each event with the next event
-    data['x_n'] = data['x'].shift(-1)
-    data['y_n'] = data['y'].shift(-1)
-    data['endX_n'] = data['endX'].shift(-1)
-    data['endY_n'] = data['endY'].shift(-1)
-    data['type_n'] = data['type'].shift(-1)
-    data['outcomeType_n'] = data['outcomeType'].shift(-1)
+#     Returns:
+#     DataFrame: Player statistics for post-recovery actions
+#     """
+#     # Create shifted columns to link each event with the next event
+#     data['x_n'] = data['x'].shift(-1)
+#     data['y_n'] = data['y'].shift(-1)
+#     data['endX_n'] = data['endX'].shift(-1)
+#     data['endY_n'] = data['endY'].shift(-1)
+#     data['type_n'] = data['type'].shift(-1)
+#     data['outcomeType_n'] = data['outcomeType'].shift(-1)
     
-    # Identify ball recoveries followed by various types of actions
-    data['PR_pass'] = (data['type'] == 'BallRecovery') & \
-                      ((data['type_n'] == 'Pass') | 
-                       (data['type_n'] == 'TakeOn') | 
-                       (data['type_n'] == 'Dispossessed') | 
-                       (data['type_n'] == 'OffsidePass') | 
-                       (data['type_n'] == 'Foul')) & \
-                      ((data['outcomeType_n'] == 'Successful') | 
-                       (data['outcomeType_n'] == 'Unsuccessful'))
+#     # Identify ball recoveries followed by various types of actions
+#     data['PR_pass'] = (data['type'] == 'BallRecovery') & \
+#                       ((data['type_n'] == 'Pass') | 
+#                        (data['type_n'] == 'TakeOn') | 
+#                        (data['type_n'] == 'Dispossessed') | 
+#                        (data['type_n'] == 'OffsidePass') | 
+#                        (data['type_n'] == 'Foul')) & \
+#                       ((data['outcomeType_n'] == 'Successful') | 
+#                        (data['outcomeType_n'] == 'Unsuccessful'))
     
-    # Extract the post-recovery events
-    PR_df = data[data['PR_pass'] == True].copy()
+#     # Extract the post-recovery events
+#     PR_df = data[data['PR_pass'] == True].copy()
     
-    # Calculate post-recovery progressive passes
-    PR_df = calculate_progressive_passes(PR_df)
+#     # Calculate post-recovery progressive passes
+#     PR_df = calculate_progressive_passes(PR_df)
     
-    # Create indicator columns for different types of post-recovery events
-    PR_df['Successful_Pass_PR'] = (PR_df['type_n'] == 'Pass') & (PR_df['outcomeType_n'] == 'Successful')
-    PR_df['Unsuccessful_Pass_PR'] = (PR_df['type_n'] == 'Pass') & (PR_df['outcomeType_n'] == 'Unsuccessful')
-    PR_df['Dispossessed_PR'] = (PR_df['type_n'] == 'Dispossessed') & (PR_df['outcomeType_n'] == 'Successful')
-    PR_df['Successful_TakeOn_PR'] = (PR_df['type_n'] == 'TakeOn') & (PR_df['outcomeType_n'] == 'Successful')
-    PR_df['Unsuccessful_TakeOn_PR'] = (PR_df['type_n'] == 'TakeOn') & (PR_df['outcomeType_n'] == 'Unsuccessful')
-    PR_df['OffsidePass_PR'] = (PR_df['type_n'] == 'OffsidePass')
-    PR_df['Foul_PR'] = (PR_df['type_n'] == 'Foul')
+#     # Create indicator columns for different types of post-recovery events
+#     PR_df['Successful_Pass_PR'] = (PR_df['type_n'] == 'Pass') & (PR_df['outcomeType_n'] == 'Successful')
+#     PR_df['Unsuccessful_Pass_PR'] = (PR_df['type_n'] == 'Pass') & (PR_df['outcomeType_n'] == 'Unsuccessful')
+#     PR_df['Dispossessed_PR'] = (PR_df['type_n'] == 'Dispossessed') & (PR_df['outcomeType_n'] == 'Successful')
+#     PR_df['Successful_TakeOn_PR'] = (PR_df['type_n'] == 'TakeOn') & (PR_df['outcomeType_n'] == 'Successful')
+#     PR_df['Unsuccessful_TakeOn_PR'] = (PR_df['type_n'] == 'TakeOn') & (PR_df['outcomeType_n'] == 'Unsuccessful')
+#     PR_df['OffsidePass_PR'] = (PR_df['type_n'] == 'OffsidePass')
+#     PR_df['Foul_PR'] = (PR_df['type_n'] == 'Foul')
     
-    # Create a new column for successful progressive passes only
-    PR_df['Successful_Progressive_Pass_PR'] = PR_df['progressive'] & PR_df['Successful_Pass_PR']
+#     # Create a new column for successful progressive passes only
+#     PR_df['Successful_Progressive_Pass_PR'] = PR_df['progressive'] & PR_df['Successful_Pass_PR']
     
-    # Group by player and calculate totals
-    PR_df_grouped = PR_df.groupby(['player', 'team']).agg(
-        Successful_Pass_PR=('Successful_Pass_PR', 'sum'),
-        Unsuccessful_Pass_PR=('Unsuccessful_Pass_PR', 'sum'),
-        Successful_TakeOn_PR=('Successful_TakeOn_PR', 'sum'), 
-        Unsuccessful_TakeOn_PR=('Unsuccessful_TakeOn_PR', 'sum'),
-        Dispossessed_PR=('Dispossessed_PR', 'sum'),
-        OffsidePass_PR=('OffsidePass_PR', 'sum'),
-        Foul_PR=('Foul_PR', 'sum'),
-        Progressive_Pass_PR=('Successful_Progressive_Pass_PR', 'sum')  # Changed to only count successful progressive passes
-    ).reset_index()
+#     # Group by player and calculate totals
+#     PR_df_grouped = PR_df.groupby(['player', 'team']).agg(
+#         Successful_Pass_PR=('Successful_Pass_PR', 'sum'),
+#         Unsuccessful_Pass_PR=('Unsuccessful_Pass_PR', 'sum'),
+#         Successful_TakeOn_PR=('Successful_TakeOn_PR', 'sum'), 
+#         Unsuccessful_TakeOn_PR=('Unsuccessful_TakeOn_PR', 'sum'),
+#         Dispossessed_PR=('Dispossessed_PR', 'sum'),
+#         OffsidePass_PR=('OffsidePass_PR', 'sum'),
+#         Foul_PR=('Foul_PR', 'sum'),
+#         Progressive_Pass_PR=('Successful_Progressive_Pass_PR', 'sum')  # Changed to only count successful progressive passes
+#     ).reset_index()
     
-    # Get total ball recoveries per player
-    total_recoveries = data[data['type'] == 'BallRecovery'].groupby(['player']).size().reset_index(name='Total_Recoveries')
+#     # Get total ball recoveries per player
+#     total_recoveries = data[data['type'] == 'BallRecovery'].groupby(['player']).size().reset_index(name='Total_Recoveries')
     
-    # Merge with the grouped dataframe
-    PR_df_grouped = PR_df_grouped.merge(total_recoveries, on='player', how='left')
+#     # Merge with the grouped dataframe
+#     PR_df_grouped = PR_df_grouped.merge(total_recoveries, on='player', how='left')
     
-    # Calculate ball retention percentage
-    PR_df_grouped['Ball_Retention_%'] = (
-        PR_df_grouped['Successful_Pass_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR']
-    ) / (
-        PR_df_grouped['Successful_Pass_PR'] + PR_df_grouped['Unsuccessful_Pass_PR'] +
-        PR_df_grouped['Dispossessed_PR'] + PR_df_grouped['OffsidePass_PR'] +
-        PR_df_grouped['Unsuccessful_TakeOn_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR'] + 0.0001  # Add small value to prevent division by zero
-    ) * 100
+#     # Calculate ball retention percentage
+#     PR_df_grouped['Ball_Retention_%'] = (
+#         PR_df_grouped['Successful_Pass_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR']
+#     ) / (
+#         PR_df_grouped['Successful_Pass_PR'] + PR_df_grouped['Unsuccessful_Pass_PR'] +
+#         PR_df_grouped['Dispossessed_PR'] + PR_df_grouped['OffsidePass_PR'] +
+#         PR_df_grouped['Unsuccessful_TakeOn_PR'] + PR_df_grouped['Successful_TakeOn_PR'] + PR_df_grouped['Foul_PR'] + 0.0001  # Add small value to prevent division by zero
+#     ) * 100
     
-    # Calculate progressive passes percentage
-    PR_df_grouped['%_Prog_Passes'] = (PR_df_grouped['Progressive_Pass_PR'] / (PR_df_grouped['Total_Recoveries'] + 0.0001)) * 100
+#     # Calculate progressive passes percentage
+#     PR_df_grouped['%_Prog_Passes'] = (PR_df_grouped['Progressive_Pass_PR'] / (PR_df_grouped['Total_Recoveries'] + 0.0001)) * 100
     
-    # Calculate the overall counts of actions by player
-    overall_counts = data.groupby(['player', 'type']).size().unstack().reset_index().fillna(0)
+#     # Calculate the overall counts of actions by player
+#     overall_counts = data.groupby(['player', 'type']).size().unstack().reset_index().fillna(0)
     
-    # Calculate the counts of successful and unsuccessful actions
-    successful_counts = data[data['outcomeType'] == 'Successful'].groupby(['player', 'type']).size().unstack().add_prefix('Successful_').reset_index().fillna(0)
-    unsuccessful_counts = data[data['outcomeType'] == 'Unsuccessful'].groupby(['player', 'type']).size().unstack().add_prefix('Unsuccessful_').reset_index().fillna(0)
+#     # Calculate the counts of successful and unsuccessful actions
+#     successful_counts = data[data['outcomeType'] == 'Successful'].groupby(['player', 'type']).size().unstack().add_prefix('Successful_').reset_index().fillna(0)
+#     unsuccessful_counts = data[data['outcomeType'] == 'Unsuccessful'].groupby(['player', 'type']).size().unstack().add_prefix('Unsuccessful_').reset_index().fillna(0)
     
-    # Merge all counts into a single DataFrame
-    player_stats = overall_counts.merge(successful_counts, on='player', how='left').merge(unsuccessful_counts, on='player', how='left').fillna(0)
+#     # Merge all counts into a single DataFrame
+#     player_stats = overall_counts.merge(successful_counts, on='player', how='left').merge(unsuccessful_counts, on='player', how='left').fillna(0)
     
-    # Merge with the post-recovery stats
-    merged_df = player_stats.merge(PR_df_grouped, on='player', how='inner')
+#     # Merge with the post-recovery stats
+#     merged_df = player_stats.merge(PR_df_grouped, on='player', how='inner')
     
-    # Get the columns to display
-    columns_to_display = [
-        'player', 'team', 'Ball_Retention_%', 'Total_Recoveries',
-        'Progressive_Pass_PR', '%_Prog_Passes', 'Successful_Pass_PR', 'Unsuccessful_Pass_PR',
-        'Successful_TakeOn_PR', 'Unsuccessful_TakeOn_PR', 'Dispossessed_PR', 
-        'OffsidePass_PR', 'Foul_PR'
-    ]
+#     # Get the columns to display
+#     columns_to_display = [
+#         'player', 'team', 'Ball_Retention_%', 'Total_Recoveries',
+#         'Progressive_Pass_PR', '%_Prog_Passes', 'Successful_Pass_PR', 'Unsuccessful_Pass_PR',
+#         'Successful_TakeOn_PR', 'Unsuccessful_TakeOn_PR', 'Dispossessed_PR', 
+#         'OffsidePass_PR', 'Foul_PR'
+#     ]
     
-    if 'BallRecovery' in merged_df.columns:
-        columns_to_display.append('BallRecovery')
+#     if 'BallRecovery' in merged_df.columns:
+#         columns_to_display.append('BallRecovery')
     
-    final_df = merged_df[columns_to_display]
+#     final_df = merged_df[columns_to_display]
     
-    return final_df, PR_df
+#     return final_df, PR_df
 
 def calculate_progressive_passes(df):
     """
